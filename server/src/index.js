@@ -9,6 +9,7 @@ app.set("port", process.env.PORT || 4000);
 
 //middlewares
 app.use(cors());
+app.options('*', cors())
 app.use(express.json());
 
 //Routes
